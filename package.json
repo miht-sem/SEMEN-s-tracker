@@ -2,7 +2,7 @@
 	"name": "semen-s-tracker",
 	"displayName": "SEMEN's tracker",
 	"description": "Task tracker and timer!!!!",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
