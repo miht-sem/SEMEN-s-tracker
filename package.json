@@ -11,7 +11,7 @@
 		"type": "git",
 		"url": "https://github.com/miht-sem/SEMEN-s-tracker.git"
 	},
-	"icon": "icon.png",
+	"icon": "img/icon.png",
 	"author": {
 		"name": "Semen Mikhtaniuk",
 		"url": "https://miht-sem.space"
@@ -25,16 +25,6 @@
 	],
 	
 	"contributes": {
-		"configuration": {
-			"title": "SEMEN Blog Post",
-			"properties": {
-				"semen-s-tracker.blogSourcePath": {
-					"type": "string",
-					"default": "src",
-					"description": "This is the path where you store your blog markdown"
-				}
-			}
-		},
 		"commands": [
 			{
 				"command": "semen-s-tracker.setTask",
