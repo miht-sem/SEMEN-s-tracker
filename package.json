@@ -1,0 +1,82 @@
+{
+	"name": "semen-s-tracker",
+	"displayName": "SEMEN's tracker",
+	"description": "Task tracker and timer!!!!",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.62.0"
+	},
+	"publisher": "miht.sem",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/miht-sem/SEMEN-s-tracker.git"
+	},
+	"icon": "icon.png",
+	"author": {
+		"name": "Semen Mikhtaniuk",
+		"url": "https://miht-sem.space"
+	},
+	"categories": [
+		"Other"
+	],
+	"main": "out/extension.js",
+	"activationEvents": [
+		"*"
+	],
+	
+	"contributes": {
+		"configuration": {
+			"title": "SEMEN Blog Post",
+			"properties": {
+				"semen-s-tracker.blogSourcePath": {
+					"type": "string",
+					"default": "src",
+					"description": "This is the path where you store your blog markdown"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "semen-s-tracker.setTask",
+				"title": "Set Current Task"
+			},
+			{
+				"command": "semen-s-tracker.clearTask",
+				"title": "Clear Current Task"
+			},
+			{
+				"command": "semen-s-tracker.setTimer",
+				"title": "Set Timer"
+			},
+			{
+				"command": "semen-s-tracker.toggleTimerActive",
+				"title": "Toggle Timer"
+			},
+			{
+				"command": "semen-s-tracker.clearTimer",
+				"title": "Clear Timer"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "yarn run compile && node ./node_modules/vscode/bin/test",
+		"install-local": "vsce package && code --install-extension lonsole-cog-0.0.1.vsix"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.12.21",
+		"tslint": "^5.18.0",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.36"
+	},
+	"__metadata": {
+		"id": "",
+		"publisherId": "",
+		"publisherDisplayName": "miht.sem",
+		"installedTimestamp": 1638782117
+	}
+}
