@@ -4,9 +4,9 @@ Extension for VS Code.
 
 ## Features
 
-You can add/edit your current task and set timer
+You can add/edit your current task and set timer.
 
-![](/img/commands.png "Text to show on mouseover")
+![](https://raw.githubusercontent.com/miht-sem/semen-s-tracker/master/img/commands.png "Commands which you can use!!!")
 
 ## Release Notes
 
@@ -20,7 +20,7 @@ Initial release of SEMEN's tracker!!!!
 
 ## Working with SEMEN's tracker
 
-* Press `(⇧ + ⌘ + P)` \ `(Ctrl + Shift + P)` to open the Command Palette
+* Press `(⇧ + ⌘ + P)` \ `(Ctrl + Shift + P)` to open the Command Palette.
 * Write one of available commands:
     * `Set Current Task`
     * `Clear Current Task`
