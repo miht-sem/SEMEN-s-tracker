@@ -6,7 +6,7 @@
 	"engines": {
 		"vscode": "^1.62.0"
 	},
-	"publisher": "miht.sem",
+	"publisher": "mihtsem",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/miht-sem/SEMEN-s-tracker.git"
@@ -21,9 +21,12 @@
 	],
 	"main": "out/extension.js",
 	"activationEvents": [
-		"*"
+		"onCommand:semen-s-tracker.setTask",
+		"onCommand:semen-s-tracker.clearTask",
+		"onCommand:semen-s-tracker.setTimer",
+		"onCommand:semen-s-tracker.toggleTimerActive",
+		"onCommand:semen-s-tracker.clearTimer"
 	],
-	
 	"contributes": {
 		"commands": [
 			{
@@ -48,14 +51,6 @@
 			}
 		]
 	},
-	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "yarn run compile && node ./node_modules/vscode/bin/test",
-		"install-local": "vsce package && code --install-extension lonsole-cog-0.0.1.vsix"
-	},
 	"devDependencies": {
 		"@types/mocha": "^2.2.42",
 		"@types/node": "^10.12.21",
@@ -64,9 +59,8 @@
 		"vscode": "^1.1.36"
 	},
 	"__metadata": {
-		"id": "",
-		"publisherId": "",
+		"id": "2c7d521f-5398-46f4-94c3-8971ea2f0cc2",
 		"publisherDisplayName": "miht.sem",
-		"installedTimestamp": 1638782117
+		"publisherId": "2a4561f9-d212-491c-a601-c2070db4c014"
 	}
 }

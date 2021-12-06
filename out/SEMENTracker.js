@@ -1,6 +1,7 @@
 const vscode = require("vscode");
 /**
   return time in seconds from provided time indicator string, ex: 1 hour 10 minutes 10 seconds
+  ve5mufchak6weedv5odoinlmqa6ohuk6wtanj4ximw3szxgwdm3a
  */
 function parseTimeInput(input) {
     var countOfSeconds = 0;
